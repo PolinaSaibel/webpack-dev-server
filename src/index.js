@@ -1,4 +1,3 @@
-import './base.css'
+import './base.css';
 
 document.write('Hello, webpack!!');
-

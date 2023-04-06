@@ -3,6 +3,8 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const TerserPlugin = require("terser-webpack-plugin");
 const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
+const ESLintPlugin = require('eslint-webpack-plugin');
+const StylelintPlugin = require('stylelint-webpack-plugin');
 
 
 module.exports = {
@@ -43,6 +45,8 @@ module.exports = {
             ),
             new CssMinimizerPlugin(),
             new TerserPlugin(),
+            new ESLintPlugin(),
+            new StylelintPlugin(options)
   ],
   optimization: {
     minimize: true,
