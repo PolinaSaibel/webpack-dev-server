@@ -1,4 +1,5 @@
 ## webpack-dev-server
+Разбор подключения *Webpack, шаблонизаторов(pug), минификаторов(линтеры)*, подключение *json-server* и настройка *webpack-dev-server* с использованием *pre-commit*
 # установка dev-server
 - Клонировать репозиторий
 - Восстановить модули: `npm install`
